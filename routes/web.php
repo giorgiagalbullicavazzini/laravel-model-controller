@@ -1,5 +1,8 @@
 <?php
 
+//* PageController path
+use App\Http\Controllers\Guest\PageController as PageController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//* Homepage route - Handled by PageController's index public function
+Route::get('/', [PageController::class, 'index']
+) -> name('home');
