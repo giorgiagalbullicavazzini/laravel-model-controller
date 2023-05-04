@@ -25,7 +25,7 @@
                         </div>
                         <div class="card-body">
                             <div class="card-nation">Nazionalità: {{ $movie -> nationality }}</div>
-                            <div class="card-date">Data di uscita: {{ $movie -> date}}</div>
+                            <div class="card-date">Data di uscita: {{ $movie -> date }}</div>
                         </div>
                         <div class="card-footer">
                             <div class="card-vote">Voto: {{ $movie -> vote }}</div>

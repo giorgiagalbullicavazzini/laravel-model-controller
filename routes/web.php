@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 //* Homepage route - Handled by PageController's index public function
 Route::get('/', [PageController::class, 'index']
-) -> name('home');
+) -> name('homepage');
